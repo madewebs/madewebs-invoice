@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import { InstallPrompt } from '@/components/install-prompt'
 
 export const metadata: Metadata = {
   title: 'Invoice Generator',
@@ -26,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <InstallPrompt />
         {children}
       </body>
     </html>
